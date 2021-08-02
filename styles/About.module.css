@@ -1,0 +1,24 @@
+.about__wrapper{    
+    /* background-color: rgba(72, 237, 128, 0.74); */
+    background: #39434C;
+    width: 475px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 361px;
+}
+
+
+.about__wrapper_right{    
+    /* background-color: rgba(72, 237, 128, 0.74); */
+    background: #39434C;
+    width: 475px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 361px;
+    margin-left: 761px;
+    margin-top: 10px;
+}
+
+.about__author{
+    margin-left: 761px;        
+}

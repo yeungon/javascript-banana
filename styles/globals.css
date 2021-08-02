@@ -1,16 +1,302 @@
-html,
+@import url("https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+@font-face {
+  font-family: Walsheim-Pro-Bold;
+  src: url("/fonts/GT-Walsheim-Pro-Bold.woff");
+}
+
+@font-face {
+  font-family: FreightText-W01-Book;
+  src: url("/fonts/FreightText-W01-Book.woff2");
+}
+
+@font-face {
+  font-family: SVN-Futura-Regular;
+  src: url("/fonts/SVN-Futura-Regular.otf");
+}
+
+@font-face {
+  font-family: Shorelines-Script;
+  src: url("/fonts/LNTH-Shorelines-Script-Bold.ttf");
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root{
+  --color-main-first: #ed7842;
+  --color-main-second: rgb(233, 30, 99);
+  --color-main-third: #2f3938;
+}
+
+/* Desktop - 1 */
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  /* background: #340830; */
+  margin: 0 auto;
+  /*background: linear-gradient(243.24deg, rgba(87, 0, 140, 0.87) 16.64%, #8F0782 94.75%);*/
+  /* background: linear-gradient(241.2deg, #093732 37.37%, #004a43 95.61%); */
+  /* background: linear-gradient(244.23deg, #0A5247 54.39%, #78F1A9 97.16%); */
+  background: linear-gradient(244.23deg, #2f3938 54.39%, #2f3938 97.16%);
+  
+}
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  /*background: linear-gradient(278deg, #210C1F 0%, rgba(97, 50, 92, 0) 100%);*/
+  border-radius: 5px;
+}
+
+::selection {
+  color: #fff;
+  background-color: #ed7842;
+}
+
+.title {
+  height: 100px;
+  font-family: Walsheim-Pro-Bold;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 80px;
+  /* color: #fdfdfe; */
+  margin-left: 356px;
+  margin-top: -5px;
+  color:  linear-gradient(244.23deg, #2f3938 54.39%, #2f3938 97.16%);
+}
+
+/* An exclusive JavaScipt story */
+.subtitle {
+  font-family: Shorelines-Script;
+  font-size: 18.5px;
+  color: #00bcd4;
+  margin-left: 719px;
+  margin-top: -66px;
+}
+
+.title-sub {
+  color: #ed7842;
+}
+
+.question__cover {
+    /* background: #e91e63; */
+    background: #2f3938;    
+    width: 357px;
+    height: 140px;
+    display: -moz-box;
+    display: flex;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+    margin-left: 363px;
+    margin-top: 29px;
+    border: 10px solid var(--color-main-first);
+    border-radius: 5px;
+}
+
+.question__title {
+  font-family: SVN-Futura-Regular;  
+  font-size: 16px;
+  line-height: auto;  
+  color: #fdfdfe;
+  word-wrap: break-word;  
+}
+
+.answer__cover {
+  width: 515px;
+  height: 405px;
+  /* border-radius: 5px; */
+  /* background: rgb(60 16 56); */
+  background: #2f3938;
+  /* border-radius: 15px; */
+  margin-top: -272px;
+  margin-left: 724px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 4px solid var(--color-main-first);
+}
+
+.answer__cover:before {
+  content: "";
+  position: absolute;
+  width: 515px;
+  height: 405px;
+  /* border-radius: 5px; */
+  /* background: #1002021f; */
+  /* border-radius: 15px; */
+  /* margin-top: -272px; */
+  /* margin-left: 724px; */
+  opacity: 0.7;
+  /* -webkit-transform: rotate(
+1deg
+); */
+  -moz-transform: rotate(1deg);
+  transform: rotate(
+1deg
+);
+  z-index: -10;
+  border: 4px solid var(--color-main-first);
+  left: 10px;
+  top: 10px;
+}
+
+.answer__title {
+  font-family: SVN-Futura-Regular, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 22px;
+  color: #ffffff;
+  padding: 25px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row-reverse;
+  list-style-type: none;
+  position: relative;
+  right: 254px;
+}
+
+li {
+  width: 51px;
+  height: 21px;
+  font-family: SVN-Futura-Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  color: #f6f4f3;
+  cursor: pointer;
+  padding-left: 39px;
+  margin-left: 36px;
+}
+
+li:hover {
+  color: #fff;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  list-style-type: none;
+  text-decoration: none;  
+  color: #f6f4f3;
 }
 
-* {
-  box-sizing: border-box;
+li > a:hover {  
+  color: var(--color-main-first);
+}
+
+.counting__cover {
+  width: 220px;
+  height: 220px;
+  /*background: rgba(114, 52, 124, 0.17);*/
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* -webkit-box-shadow: 13px 4px 21px -10px rgb(255 163 255);
+    -moz-box-shadow: 13px 4px 21px -10px rgb(255 163 255);
+    box-shadow: 13px 4px 21px -10px rgb(255 163 255);*/
+
+  /* background: rgba(72, 237, 128, 0.74); */
+  /* background:#00FEAE; */
+  background: #39434C;
+  margin-left: 421px;
+  margin-top: 56px;
+}
+
+.counting__content {
+  font-family: SVN-Futura-Regular;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 85px;
+  line-height: 101px;
+  /*color: #ED7842;*/
+  color: #fff;
+}
+
+.author {
+  width: 180px;
+  height: 18px;
+  font-family: SVN-Futura-Regular;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 13px;
+  line-height: 18px;
+  color: #fdfdfe;
+  margin-left: 1px;
+  /* identical to box height */
+
+  color: #fdfdfe;
+}
+
+.controller {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  position: relative;
+  top: -101px;
+  left: -167px;
+}
+/* 
+i.bx.bxs-right-arrow-circle {
+    font-size: 70px;    
+    transition:  transform 0.25s;
+    
+}
+
+i.bxs-left-arrow-circle {
+    font-size: 70px;    
+    transition:  transform 0.25s;
+}
+
+i.bx.bxs-right-arrow-circle:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+i.bxs-left-arrow-circle:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+} */
+
+.controller__arrow-left {
+  transition: transform 0.25s;
+  transform: rotate(180deg);
+  padding-left: 10px!important;
+}
+
+.controller__arrow-right {
+  padding-right: 10px!important;
+  transition: transform 0.25s;
+}
+
+.controller__arrow-left:hover {
+  cursor: pointer;
+  transform: scale(1.1) rotate(180deg);
+}
+
+.controller__arrow-right:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#image__svg{
+  position: relative;  
+  top: -258px;
+  z-index: -10;
 }
