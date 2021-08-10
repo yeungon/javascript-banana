@@ -1,16 +1,24 @@
 .about__wrapper{    
     /* background-color: rgba(72, 237, 128, 0.74); */
-    background: #39434C;
+    
     width: 475px;
     padding: 15px;
     border-radius: 5px;
     margin-left: 361px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: linear-gradient(
+45deg
+, #e91e63, #ed7844);
 }
 
 
 .about__wrapper_right{    
     /* background-color: rgba(72, 237, 128, 0.74); */
-    background: #39434C;
+    /*background: #39434C;*/
+    background: linear-gradient(
+45deg
+, #e91e63, #ed7844);
     width: 475px;
     padding: 15px;
     border-radius: 5px;
@@ -22,3 +30,14 @@
 .about__author{
     margin-left: 761px;        
 }
+
+
+.about__intro{
+    font-family: SVN-Futura-Regular;  
+    font-size: 16px;
+    line-height: auto;  
+    color: #fdfdfe;
+    word-wrap: break-word;  
+    padding: 10px;    
+}
+

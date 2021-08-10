@@ -71,7 +71,12 @@ main {
   /* color: #fdfdfe; */
   margin-left: 356px;
   margin-top: -5px;
-  color:  linear-gradient(244.23deg, #2f3938 54.39%, #2f3938 97.16%);
+  
+  background: linear-gradient(
+65deg
+, #e91e63, #ffc107);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* An exclusive JavaScipt story */
@@ -100,8 +105,10 @@ main {
     align-items: center;
     margin-left: 363px;
     margin-top: 29px;
-    border: 10px solid var(--color-main-first);
+    border: 5px solid var(--color-main-first);
     border-radius: 5px;
+    outline: 5px solid var(--color-main-first);
+    outline-offset: 5px;
 }
 
 .question__title {
@@ -109,7 +116,8 @@ main {
   font-size: 16px;
   line-height: auto;  
   color: #fdfdfe;
-  word-wrap: break-word;  
+  word-wrap: break-word;
+  padding: 10px;  
 }
 
 .answer__cover {
@@ -126,6 +134,7 @@ main {
   align-items: center;
   position: relative;
   border: 4px solid var(--color-main-first);
+
 }
 
 .answer__cover:before {

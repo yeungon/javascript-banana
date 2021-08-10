@@ -22,6 +22,7 @@ export default function Home() {
                 <h4>Credits</h4>
             1) https://github.com/denysdovhan/wtfjs
             2) https://twitter.com/oliverjumpertz/status/1415973145652178953
+            3) https://jsisweird.com/
             </p>
           </div>
 

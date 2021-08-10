@@ -18,14 +18,15 @@ export default function Home() {
           <Navigate />
           <Header />
           <div className={styles.about__wrapper}>
-            <p className="question__title">
+
+            <p className={styles. about__intro}>
               JavaScript is a great language in many ways. Yet, there are some
               technical debts due to a not-so-good prototype from the first day it was designed.
             </p>
           </div>
 
           <div className={styles.about__wrapper_right}>
-            <p className="question__title">
+           <p className={styles. about__intro}>
               This page attempts to synthesize some gotchas `banana` of the
               language. Hope that helps just in case you want to reach a deeper
               level.
