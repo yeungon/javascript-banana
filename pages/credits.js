@@ -2,8 +2,19 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../components/header";
 import Navigate from "../components/navigate";
-import styles from "../styles/About.module.css";
+import styles from "../styles/Credits.module.css";
 import Footer from "../components/footer";
+
+const creditObjectHTML = 
+  {__html: `
+    <ol>
+     <li>https://github.com/denysdovhan/wtfjs</li>
+     <li>https://twitter.com/oliverjumpertz/status/1415973145652178953</li>
+     <li>https://jsisweird.com/</li>
+     </ol>
+    `
+  }
+
 
 export default function Home() {
   return (
@@ -18,13 +29,13 @@ export default function Home() {
           <Navigate />
           <Header />
           <div className={styles.about__wrapper}>
-            <p className="question__title">
+            <div className="question__title">
                 <h4>Credits</h4>
-            1) https://github.com/denysdovhan/wtfjs
-            2) https://twitter.com/oliverjumpertz/status/1415973145652178953
-            3) https://jsisweird.com/
-            </p>
+              <div dangerouslySetInnerHTML={creditObjectHTML} />
+            </div>
           </div>
+
+          
 
           <div className={styles.about__author}>
             <div className="author">

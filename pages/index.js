@@ -12,7 +12,7 @@ import Footer from "../components/footer";
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
   // You can use any data fetching library
-  const res = await fetch("https://banana.laptrinh.org/api.php");
+  const res = await fetch("https://api.js.edu.vn/");
   const posts = await res.json();
 
   // By returning { props: { posts } }, the Blog component

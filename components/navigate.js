@@ -2,8 +2,14 @@ import Link from "next/link";
 
 function navigate() {
   return (
-    <>
-      <ul>     
+    <div className = "navitate__style">           
+      <ul>
+        <li>
+          <Link href="/">
+            <a>Home</a>
+          </Link>
+        </li>
+             
         <li>
           <Link href="/credits">
             <a>Credits</a>
@@ -14,13 +20,9 @@ function navigate() {
             <a>About</a>
           </Link>
         </li>
-        <li>
-          <Link href="/">
-            <a>Home</a>
-          </Link>
-        </li>
+      
       </ul>
-    </>
+    </div>
   );
 }
 

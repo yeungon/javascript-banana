@@ -168,20 +168,25 @@ main {
   font-size: 19px;
   line-height: 22px;
   color: #ffffff;
-  padding: 25px;
+  padding: 15px; 
 }
+
+
+.navitate__style{
+    width:  100%;
+    max-width: 308px;
+    margin-left: 882px;
+}
+
 
 ul {
   display: flex;
-  flex-direction: row-reverse;
-  list-style-type: none;
-  position: relative;
-  right: 254px;
+  flex-direction: row;
+  list-style-type: none; 
 }
 
-li {
-  width: 51px;
-  height: 21px;
+
+li {    
   font-family: SVN-Futura-Regular;
   font-style: normal;
   font-weight: normal;
@@ -287,6 +292,10 @@ i.bxs-left-arrow-circle:hover{
   transition: transform 0.25s;
   transform: rotate(180deg);
   padding-left: 10px!important;
+}
+
+img.controller__arrow-left {
+    overflow: visible!important;
 }
 
 .controller__arrow-right {
