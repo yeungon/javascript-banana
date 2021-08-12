@@ -22,13 +22,13 @@
     width: 475px;
     padding: 15px;
     border-radius: 5px;
-    margin-left: 361px;
+    margin-left: 352px;
     margin-left: 761px;
     margin-top: 10px;
 }
 
 .about__author{
-    margin-left: 761px;        
+    margin-left: 723px;        
 }
 
 
@@ -41,3 +41,14 @@
     padding: 10px;    
 }
 
+
+.credit__title{
+   padding: 19px;
+   word-break: break-all;
+   line-height: 40px;
+}
+
+.credit__title > h4 {
+    color: #fff;
+    font-family: 'SVN-Futura-Regular';
+}

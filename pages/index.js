@@ -1,22 +1,14 @@
 import Head from "next/head";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Header from "../components/header";
 import Navigate from "../components/navigate";
 import Footer from "../components/footer";
-// import styles from "../styles/Home.module.css";
 
-// This function gets called at build time on server-side.
-// It won't be called on client-side, so you can even do
-// direct database queries. See the "Technical details" section.
 export async function getStaticProps() {
-  // Call an external API endpoint to get posts.
-  // You can use any data fetching library
+
   const res = await fetch("https://api.js.edu.vn/");
   const posts = await res.json();
-
-  // By returning { props: { posts } }, the Blog component
-  // will receive `posts` as a prop at build time
   return {
     props: {
       posts,
@@ -25,7 +17,25 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+  
   const [number, handleNumber] = useState(1);
+  // const [dataAPI, setDataAPI] = useState(null);
+  // const [isLoading, setIsLoading] = useState(true);
+
+  // useEffect(async () => {
+  //   try {
+  //     const res = await fetch("https://api.js.edu.vn/");
+  //     const postsEffect = await res.json();      
+  //     await setDataAPI(postsEffect);
+  //     console.log(postsEffect)
+  //     setIsLoading(false);
+  //   }catch(e){
+  //     console.log(e.message)
+  //   }
+    
+  // }, []);
+
+
   
   function handleClick() {
     if (number < posts.length) {
@@ -56,15 +66,17 @@ export default function Home({ posts }) {
         <div>
           <Navigate />
           <Header />
-
           <div className="question__cover">
-            <p className="question__title">{posts[number - 1].fields.Notes}</p>
+            
+            <p className="question__title" dangerouslySetInnerHTML={{__html: posts[number - 1].fields.Notes}}></p>
+            
           </div>
           <div className="counting__cover">
             <p className="counting__content">{number}</p>
           </div>
-          <div className="answer__cover">
-            <p className="answer__title">{posts[number - 1].fields.explain}</p>
+          <div className="answer__cover">            
+          <p className="answer__title" dangerouslySetInnerHTML={{__html: posts[number - 1].fields.explain}}></p>
+
           </div>
           <div className="controller">
             <div>

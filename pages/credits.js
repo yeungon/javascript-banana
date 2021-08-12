@@ -11,6 +11,7 @@ const creditObjectHTML =
      <li>https://github.com/denysdovhan/wtfjs</li>
      <li>https://twitter.com/oliverjumpertz/status/1415973145652178953</li>
      <li>https://jsisweird.com/</li>
+     <li>https://javascript.plainenglish.io/here-are-7-weird-things-in-javascript-42da32e7b50</li>
      </ol>
     `
   }
@@ -29,7 +30,7 @@ export default function Home() {
           <Navigate />
           <Header />
           <div className={styles.about__wrapper}>
-            <div className="question__title">
+            <div className={styles.credit__title}>
                 <h4>Credits</h4>
               <div dangerouslySetInnerHTML={creditObjectHTML} />
             </div>

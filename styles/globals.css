@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 @font-face {
   font-family: Walsheim-Pro-Bold;
@@ -26,7 +26,9 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box;  
+  margin:  0px;
+  padding:  0px;
 }
 
 :root{
@@ -69,7 +71,7 @@ main {
   font-weight: normal;
   font-size: 80px;
   /* color: #fdfdfe; */
-  margin-left: 356px;
+  margin-left: 348px;
   margin-top: -5px;
   
   background: linear-gradient(
@@ -84,8 +86,8 @@ main {
   font-family: Shorelines-Script;
   font-size: 18.5px;
   color: #00bcd4;
-  margin-left: 719px;
-  margin-top: -66px;
+  margin-left: 709px;
+  margin-top: 15px;
 }
 
 .title-sub {
@@ -172,10 +174,17 @@ main {
 }
 
 
-.navitate__style{
+.navigate__style{
     width:  100%;
-    max-width: 308px;
-    margin-left: 882px;
+    max-width: 308px;    
+    margin-left: 910px;
+    margin-top: 23px;
+}
+
+
+.navigate__style > ul > li {
+    padding-left: 58px;
+    margin-left: 19px;
 }
 
 
@@ -194,8 +203,7 @@ li {
   line-height: 21px;
   color: #f6f4f3;
   cursor: pointer;
-  padding-left: 39px;
-  margin-left: 36px;
+  
 }
 
 li:hover {
@@ -317,4 +325,10 @@ img.controller__arrow-left {
   position: relative;  
   top: -258px;
   z-index: -10;
+}
+
+code {
+    color: #ff00fb;
+    /*font-family: SVN-Futura-Regular;*/
+    font-family: 'Ubuntu Mono', monospace;      
 }

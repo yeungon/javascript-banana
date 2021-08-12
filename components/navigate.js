@@ -2,7 +2,7 @@ import Link from "next/link";
 
 function navigate() {
   return (
-    <div className = "navitate__style">           
+    <div className = "navigate__style">           
       <ul>
         <li>
           <Link href="/">
