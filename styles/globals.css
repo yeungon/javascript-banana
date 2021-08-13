@@ -561,39 +561,35 @@ li{
 /*iphone 6,7,8*/
 @media only screen and (max-width:  375px){
   body {    
-    max-width: 320px;
+    max-width: 375px;
   }
 
 
-main {
-  width: 100%;
-  max-width: 320px;
-  height: 100vh;
-  /*background: linear-gradient(278deg, #210C1F 0%, rgba(97, 50, 92, 0) 100%);*/
-  border-radius: 0px;
+main {  
+  max-width: 375px;  
 }
 
 .title {
-     height: 50px;
-    font-size: 37px;
-    margin-left: 13px;
-    margin-top: -8px;
+    height: 66px;
+    font-size: 45px;
+    margin-left: -6px;
+    margin-top: 2px;
     margin-bottom: 12px;
-    padding-left: 4px;
+    padding-left: 10px;
 }
 
 .subtitle {
-     font-size: 11px;
+     font-size: 15px;
     margin-left: 75px;
     margin-top: -15px;
     margin-bottom: 41px;
 }
 
 .navigate__style{
-       width: 100%;
-    max-width: 244px;
+    width: 100%;
+    max-width: 284px;
     margin-left: 40px;
-    margin-top: 6px;    
+    margin-top: 10px;    
     display: flex;
     justify-content: center;
 }
@@ -609,14 +605,10 @@ li{
 
 
 .question__cover {
-    width: 315px;
-    height: 89px;
+    width: 372px;
+    height: 104px;
     margin-left: 8px;
-    margin-top: -30px;
-    border: 1px solid var(--color-main-first);
-    border-radius: 5px;
-    outline: 1px solid var(--color-main-first);
-    outline-offset: -3px;   
+    margin-top: -20px;  
 }
 
 .question__title{
@@ -629,7 +621,7 @@ li{
 
 
 .answer__cover {
-    width: 315px;
+    width: 372px;
     height: 229px;
     border-radius: 15px;
     margin-top: 8px;
@@ -638,6 +630,7 @@ li{
     border-radius: 5px;
     outline: 1px solid var(--color-main-first);
     outline-offset: -3px;
+
 
 }
 
@@ -655,7 +648,7 @@ li{
 .counting__cover {
  width: 50px;
 height: 50px;
-margin-left: 135px;
+margin-left: 165px;
 margin-top: 4px;
 }
 
