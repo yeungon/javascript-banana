@@ -328,7 +328,14 @@ img.controller__arrow-left {
 }
 
 code {
-    color: #ff00fb;
+    /*color: #ff00fb;*/
+    color: #00bcd4;
     /*font-family: SVN-Futura-Regular;*/
-    font-family: 'Ubuntu Mono', monospace;      
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 17.5px;      
+}
+
+strong {
+    font-weight: normal;
+    color: var(--color-main-first);
 }
