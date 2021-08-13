@@ -19,6 +19,7 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   
   const [number, handleNumber] = useState(1);
+  const [classCircle, handleclassCircle] = useState(0);
   // const [dataAPI, setDataAPI] = useState(null);
   // const [isLoading, setIsLoading] = useState(true);
 
@@ -35,10 +36,17 @@ export default function Home({ posts }) {
     
   // }, []);
 
-
+  function changeCircle(currentPost){
+    let length = posts.length;
+    let currentPercent = (currentPost*100)/length;
+    console.log(Math.ceil(currentPercent));
+    handleclassCircle(Math.ceil(currentPercent))
+  }
   
-  function handleClick() {
+  function handleClick() {  
+
     if (number < posts.length) {
+      changeCircle(number+1)
       handleNumber(number + 1);
     } else {
       alert("out of scope");
@@ -48,6 +56,7 @@ export default function Home({ posts }) {
 
   function handleClickDecrease() {
     if (number > 1) {
+      changeCircle(number-1)
       handleNumber(number - 1);
     } else {
       alert("out of scope");
@@ -66,14 +75,18 @@ export default function Home({ posts }) {
         <div>
           <Navigate />
           <Header />
-          <div className="question__cover">
-            
-            <p className="question__title" dangerouslySetInnerHTML={{__html: posts[number - 1].fields.Notes}}></p>
-            
+          <div className="question__cover">            
+            <p className="question__title" dangerouslySetInnerHTML={{__html: posts[number - 1].fields.Notes}}></p>            
+          </div>        
+
+          <div className={`c100 counting__circle center p${classCircle}`}>
+            <span>{number}</span>
+            <div className="slice">
+              <div className="bar"></div>
+              <div className="fill"></div>
+            </div>
           </div>
-          <div className="counting__cover">
-            <p className="counting__content">{number}</p>
-          </div>
+
           <div className="answer__cover">            
           <p className="answer__title" dangerouslySetInnerHTML={{__html: posts[number - 1].fields.explain}}></p>
 

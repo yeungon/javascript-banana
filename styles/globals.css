@@ -1,3 +1,5 @@
+@import url("circle.css");
+
 @import url("https://fonts.googleapis.com/css2?family=Meera+Inimai&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
@@ -129,7 +131,8 @@ main {
   /* background: rgb(60 16 56); */
   background: #2f3938;
   /* border-radius: 15px; */
-  margin-top: -272px;
+  
+  margin-top: -119px;
   margin-left: 724px;
   display: flex;
   justify-content: center;
@@ -236,6 +239,11 @@ li > a:hover {
   background: #39434C;
   margin-left: 421px;
   margin-top: 56px;
+}
+
+.counting__circle{
+    left: -187px;
+    top: 128px;
 }
 
 .counting__content {
@@ -538,15 +546,16 @@ li{
 }
 
 
-.counting__cover { 
-  margin-left: 185px;
+.counting__circle {
+    left: -8px;
+    top: 5px;
 }
 
-
-.counting__content {
-  font-size: 15px;
-
+.c100{
+  
+    font-size: 68px;
 }
+
 
 
 .controller {      
@@ -645,18 +654,16 @@ li{
 }
 
 
-.counting__cover {
- width: 50px;
-height: 50px;
-margin-left: 165px;
-margin-top: 4px;
+.counting__circle {
+    left: -8px;
+    top: 5px;
 }
 
-
-.counting__content {
-  font-size: 15px;
-
+.c100{
+  
+    font-size: 68px;
 }
+
 
 
 .controller {      
@@ -716,6 +723,15 @@ li{
   font-size: 13px;
 }
 
+.counting__circle {
+    left: -8px;
+    top: 5px;
+}
+
+.c100{
+  
+    font-size: 68px;
+}
 
 .question__cover {
     width: 315px;
