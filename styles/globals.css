@@ -486,7 +486,7 @@ main {
 }
 
 .subtitle {
-         font-size: 14px;
+     font-size: 14px;
     margin-left: 99px;
     margin-top: -18px;
     margin-bottom: 42px;
@@ -547,7 +547,7 @@ li{
 
 
 .counting__circle {
-    left: -8px;
+    left: 7px;
     top: 5px;
 }
 
@@ -561,7 +561,7 @@ li{
 .controller {      
      left: 10px;
     margin-top: 124px;
-    margin-left: 10px;
+    margin-left: 30px;
 }
 }
 
@@ -654,8 +654,8 @@ li{
 }
 
 
-.counting__circle {
-    left: -8px;
+.counting__circle {    
+    left: 5px;
     top: 5px;
 }
 
@@ -668,8 +668,8 @@ li{
 
 .controller {      
      left: 10px;
-    margin-top: 124px;
-    margin-left: 10px;
+    margin-top: 124px;    
+    margin-left: 35px;
 }
 }
 
@@ -724,7 +724,7 @@ li{
 }
 
 .counting__circle {
-    left: -8px;
+    left: 6px;
     top: 5px;
 }
 
@@ -793,8 +793,8 @@ margin-top: 4px;
 
 .controller {      
      left: 10px;
-    margin-top: 124px;
-    margin-left: 10px;
+    margin-top: 124px;    
+    margin-left: 29px;
 }
 }
 

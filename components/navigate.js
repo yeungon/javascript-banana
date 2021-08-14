@@ -16,11 +16,15 @@ function navigate() {
           </Link>
         </li>
         <li>
+          <Link href="/resource">
+            <a>API</a>
+          </Link>
+        </li>
+        <li>
           <Link href="/about">
             <a>About</a>
           </Link>
-        </li>
-      
+        </li>      
       </ul>
     </div>
   );

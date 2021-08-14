@@ -17,7 +17,7 @@ const creditObjectHTML =
   }
 
 
-export default function Home() {
+export default function Credits() {
   return (
     <div>
       <Head>
@@ -35,9 +35,6 @@ export default function Home() {
               <div dangerouslySetInnerHTML={creditObjectHTML} />
             </div>
           </div>
-
-          
-
           <div className={styles.about__author}>
             <div className="author">
               <p>Crafted by Vuong Nguyen</p>

@@ -42,3 +42,78 @@
     padding: 10px;    
 }
 
+
+/*iphone 6,7,8 Plus*/
+@media only screen and (max-width:  414px){
+        .about__wrapper{          
+    width: 410px;
+    padding: 3px;    
+    margin-left: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;   
+}
+
+.about__wrapper_right{
+    width: 410px;
+    padding: 3px;    
+    margin-left: 2px;    
+    margin-top: 20px;    
+}
+
+
+.about__author{
+    margin-left: 135px;        
+}
+}
+
+
+
+/*iphone 6,7,8*/
+@media only screen and (max-width:  375px){
+       .about__wrapper{          
+    width: 370px;
+    padding: 3px;    
+    margin-left: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;   
+}
+
+.about__wrapper_right{
+    width: 370px;
+    padding: 3px;    
+    margin-left: 2px;    
+    margin-top: 20px;    
+}
+
+
+.about__author{
+    margin-left: 115px;        
+}
+
+ 
+}
+
+
+/*iphone 5*/
+@media only screen and (max-width:  320px){
+   .about__wrapper{          
+    width: 310px;
+    padding: 3px;    
+    margin-left: 4.5px;
+    margin-top: 10px;
+    margin-bottom: 20px;   
+}
+
+.about__wrapper_right{
+    width: 310px;
+    padding: 3px;    
+    margin-left: 4.5px;    
+    margin-top: 10px;    
+}
+
+
+.about__author{
+    margin-left: 85px;        
+}
+
+}
