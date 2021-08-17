@@ -44,8 +44,7 @@
 
 
 /*iPad*/
-@media only screen and (max-width:  768px){
- 
+@media only screen and (max-width:  768px){ 
 .about__wrapper{    
     /* background-color: rgba(72, 237, 128, 0.74); */
     
