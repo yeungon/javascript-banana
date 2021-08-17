@@ -348,61 +348,72 @@ strong {
 }
 
 
+.quicktip__image-tip{
+  position: absolute;
+  left: 1420px;
+  top: 309px;
+}
+
+.quicktip__image-info{
+  position: absolute;
+  left: 1401px;
+  top: 309px;
+}
 
 /*iPad*/
 @media only screen and (max-width:  768px){
   body {    
-    max-width: 320px;
+    max-width: 760px;
   }
 
 
 main {
   width: 100%;
-  max-width: 320px;
+  max-width: 760px;
   height: 100vh;
   /*background: linear-gradient(278deg, #210C1F 0%, rgba(97, 50, 92, 0) 100%);*/
   border-radius: 0px;
 }
 
-.title {
-     height: 50px;
-    font-size: 37px;
-    margin-left: 13px;
-    margin-top: -8px;
-    margin-bottom: 12px;
+.title {     
+    font-size: 57px;
+    margin-left: 153px;
+    margin-top: -10px;
+    margin-bottom: 22px;
     padding-left: 4px;
 }
 
 .subtitle {
-     font-size: 11px;
-    margin-left: 75px;
-    margin-top: -15px;
-    margin-bottom: 41px;
+    font-size: 15px;
+    margin-left: 275px;
+    margin-top: -35px;
+    margin-bottom: 51px;
 }
 
 .navigate__style{
-       width: 100%;
-    max-width: 244px;
-    margin-left: 40px;
-    margin-top: 6px;    
+    width: 100%;
+    max-width: 615px;
+    margin-left: 70px;
+    margin-top: 26px;
+     margin-bottom: 26px;     
     display: flex;
     justify-content: center;
 }
 
 
 .navigate__style > ul > li {    
-    margin-left: 10px;
+    margin-left: 25px;
 }
 
 li{
-  font-size: 13px;
+  font-size: 15px;
 }
 
 
 .question__cover {
-    width: 315px;
-    height: 89px;
-    margin-left: 8px;
+    width: 715px;
+    height: 150px;
+    margin-left: 22px;
     margin-top: -30px;
     border: 1px solid var(--color-main-first);
     border-radius: 5px;
@@ -411,7 +422,7 @@ li{
 }
 
 .question__title{
-  font-size: 14px;
+  font-size: 16px;
 }
 
 #image__svg{
@@ -420,11 +431,11 @@ li{
 
 
 .answer__cover {
-    width: 315px;
+    width: 715px;
     height: 229px;
     border-radius: 15px;
-    margin-top: 8px;
-    margin-left: 8px;
+   margin-top: 10px;
+    margin-left: 22px;
     border: 1px solid var(--color-main-first);
     border-radius: 5px;
     outline: 1px solid var(--color-main-first);
@@ -443,16 +454,9 @@ li{
 }
 
 
-.counting__cover {
- width: 50px;
-height: 50px;
-margin-left: 135px;
-margin-top: 4px;
-}
-
-
-.counting__content {
-  font-size: 15px;
+.counting__circle{
+       left: 2px;
+    top: 6px;
 
 }
 
@@ -462,6 +466,22 @@ margin-top: 4px;
     margin-top: 124px;
     margin-left: 10px;
 }
+
+
+
+.quicktip__image-tip {
+    position: absolute;
+    left: 653px;
+    top: 376px;
+}
+
+.quicktip__image-info{
+  position: absolute;
+  left: 627px;
+  top: 376px;
+}
+
+
 }
 
 
@@ -510,7 +530,7 @@ main {
 }
 
 li{
-  font-size: 13px;
+  font-size: 14px;
 }
 
 
@@ -571,6 +591,24 @@ li{
     margin-top: 124px;
     margin-left: 30px;
 }
+
+
+.quicktip__image-tip {
+    position: absolute;
+    left: 345px;
+    top: 250px;
+    width:  20%;  
+}
+
+.quicktip__image-info{
+  position: absolute;
+  left: 340px;
+  top: 258px;
+  width:  20%;   
+}
+
+
+
 }
 
 
@@ -682,6 +720,23 @@ li{
     margin-top: 124px;    
     margin-left: 35px;
 }
+
+.quicktip__image-tip {
+    position: absolute;
+    left: 310px;
+    top: 275px;
+    width:  20%;  
+}
+
+.quicktip__image-info{
+  position: absolute;
+  left: 310px;
+    top: 278px;
+    width:  20%;   
+}
+
+
+
 }
 
 
@@ -738,7 +793,7 @@ li{
 }
 
 .counting__circle {
-    left: 6px;
+    left: 8.5px;
     top: 5px;
 }
 
@@ -806,10 +861,28 @@ margin-top: 4px;
 
 
 .controller {      
-     left: 10px;
+     left: 12px;
     margin-top: 124px;    
     margin-left: 29px;
 }
+
+
+.quicktip__image-tip {
+    position: absolute;
+    left: 270px;
+    top: 220px;
+    width:  20%;  
+}
+
+.quicktip__image-info{
+  position: absolute;
+  left: 270px;
+    top: 220px;
+    width:  20%;   
+}
+
+
+
 }
 
 

@@ -42,6 +42,29 @@
     padding: 10px;    
 }
 
+/*iPad*/
+@media only screen and (max-width:  768px){
+ 
+.about__wrapper{    
+    /* background-color: rgba(72, 237, 128, 0.74); */
+    
+    width: 700px;
+    padding: 15px;
+    border-radius: 5px;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background: linear-gradient(
+45deg
+, #e91e63, #ed7844);
+}
+
+.about__author{    
+    margin-left: 575px;        
+}
+
+
+}
 
 
 /*iphone 6,7,8 Plus*/
