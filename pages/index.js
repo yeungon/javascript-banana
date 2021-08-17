@@ -20,6 +20,7 @@ export default function Home({ posts }) {
   const image__instruction = [{
       url: "infor-image.png",
       width: 150,
+      height: 150,
       className: "quicktip__image-info"
     },
      {
@@ -89,6 +90,16 @@ export default function Home({ posts }) {
     }
   }
 
+// <Image
+//       className={image__instruction[indexImage].className} 
+//       src={`/images/${image__instruction[indexImage].url}`}
+//       width = {image__instruction[indexImage].width}                                      
+//       alt={"quick tip"}
+//       height = {image__instruction[indexImage].height}
+      
+//  />
+
+
   return (
     <div>
       <Head>
@@ -101,12 +112,7 @@ export default function Home({ posts }) {
           <Navigate />
           <Header />
 
-          <img
-                className={image__instruction[indexImage].className} 
-                src={`/images/${image__instruction[indexImage].url}`}
-                width = {image__instruction[indexImage].width}                                      
-                alt={"quick tip"}
-           />
+          
 
           <div className="question__cover">            
             <p className="question__title" dangerouslySetInnerHTML={{__html: posts[number - 1].fields.Notes}}></p>            
