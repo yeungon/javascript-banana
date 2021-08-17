@@ -34,7 +34,16 @@ export default function Home({ posts }) {
   const [classCircle, handleclassCircle] = useState(0);  
   const [indexImage, changeImage] = useState(0);
 
-  useEffect(() => {    
+  useEffect(() => {  
+        function handleImage(currentPost){ 
+          let currentPost__posttype = posts[currentPost -1].fields.post__type;
+          if(currentPost__posttype === "info"){  
+            changeImage(0)      
+          }else{
+            changeImage(1)      
+          }
+        }    
+        
        handleImage(number)    
   }, [number]);
   
@@ -59,14 +68,6 @@ export default function Home({ posts }) {
     handleclassCircle(Math.ceil(currentPercent))
   }
   
-  function handleImage(currentPost){ 
-    let currentPost__posttype = posts[currentPost -1].fields.post__type;
-    if(currentPost__posttype === "info"){  
-      changeImage(0)      
-    }else{
-      changeImage(1)      
-    }
-  }
 
   function handleClickIncrease() {  
     if (number < posts.length) {
