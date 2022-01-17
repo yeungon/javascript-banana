@@ -6,7 +6,7 @@ import Navigate from "../components/navigate";
 import Footer from "../components/footer";
 
 export async function getStaticProps() {
-  const res = await fetch("http://api.js.hoccoban.com");
+  const res = await fetch("https://api.js.hoccoban.com");
   const posts = await res.json();
   return {
     props: {
@@ -84,7 +84,7 @@ export default function Home({ posts }) {
       changeCircle(number - 1);
       handleNumber(number - 1);
     } else {
-      alert("out of scope");
+      alert("Bro, that is all we have now!");
       return;
     }
   }
@@ -136,7 +136,7 @@ export default function Home({ posts }) {
             ></p>
           </div>
           <div className="controller">
-            
+
             <div>
               {/* <i className="bx bxs-left-arrow-circle" style={{color: '#e91e63'}} />
       <i className="bx bxs-right-arrow-circle" style={{color: '#e91e63'}} /> */}

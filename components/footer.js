@@ -1,12 +1,11 @@
 import Link from "next/link";
-
+import Image from "next/image";
 
 function footer() {
   return (
     <>
-      
-      <div id = "image__svg">
-
+      <div id="image__svg">
+        {/* 
       <svg width={768} height={596} viewBox="0 0 768 596" fill="none" xmlns="http://www.w3.org/2000/svg">
   <g clipPath="url(#clip0)">
     <path d="M466.439 371.03L465.188 385.737C465.04 387.453 464.217 389.042 462.9 390.152C461.582 391.263 459.878 391.806 458.161 391.662L335.59 381.235C333.873 381.087 332.285 380.264 331.174 378.946C330.063 377.629 329.52 375.924 329.664 374.207L330.915 359.5C331.063 357.784 331.886 356.195 333.204 355.085C334.521 353.974 336.226 353.431 337.943 353.575L460.514 364.002C462.231 364.15 463.819 364.973 464.93 366.291C466.041 367.608 466.584 369.313 466.439 371.03V371.03Z" fill="#ED7842" />
@@ -36,11 +35,15 @@ function footer() {
       <rect width="767.655" height="595.996" fill="white" />
     </clipPath>
   </defs>
-</svg>
+</svg> */}
 
-        </div>
-      
-      
+         <Image        
+          src="/images/undraw_javascript_frameworks_-8-qpc.svg"          
+          width={468}
+          height={320}
+          alt={"javascript"}
+        />
+      </div>
     </>
   );
 }
