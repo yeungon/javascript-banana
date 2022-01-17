@@ -25,16 +25,18 @@ export default function About() {
           <Navigate />
           <Header />
           <div className={styles.about__wrapper}>
-
-            <p className={styles. about__intro}>
+            <p className={styles.about__intro}>
               JavaScript is a great language in many ways. Yet, there are some
-              technical debts due to a not-so-good prototype from the first day it was designed.
+              technical debts due to a not-so-good prototype from the first day
+              it was designed.
             </p>
           </div>
 
           <div className={styles.about__wrapper_right}>
-           <p className={styles. about__intro} dangerouslySetInnerHTML={{__html: about__html}}>             
-            </p>
+            <p
+              className={styles.about__intro}
+              dangerouslySetInnerHTML={{ __html: about__html }}
+            ></p>
           </div>
 
           <div className={styles.about__author}>
