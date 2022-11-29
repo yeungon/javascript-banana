@@ -10,7 +10,7 @@ export default function API() {
   const about__html = `We also server a free API for those who want to build your own "gotcha" version. 
               <br/><br/>
 
-              API: <a href = "https://api.js.hoccoban.com">https://api.js.hoccoban.com</a>
+              API: <a href = "https://banana.laptrinh.org/api/v1">https://banana.laptrinh.org/api/v1</a>
 
               <br><br>
 
