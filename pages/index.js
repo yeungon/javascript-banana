@@ -5,15 +5,6 @@ import Header from "../components/header";
 import Navigate from "../components/navigate";
 import Footer from "../components/footer";
 
-export async function getStaticProps() {
-  const res = await fetch("https://api.js.hoccoban.com");
-  const posts = await res.json();
-  return {
-    props: {
-      posts,
-    },
-  };
-}
 
 export default function Home({ posts }) {
   const image__instruction = [
@@ -48,24 +39,9 @@ export default function Home({ posts }) {
     handleImage(number);
   }, [number]);
 
-  // const [dataAPI, setDataAPI] = useState(null);
-  // const [isLoading, setIsLoading] = useState(true);
-  // useEffect(async () => {
-  //   try {
-  //     const res = await fetch("https://api.js.edu.vn/");
-  //     const postsEffect = await res.json();
-  //     await setDataAPI(postsEffect);
-  //     console.log(postsEffect)
-  //     setIsLoading(false);
-  //   }catch(e){
-  //     console.log(e.message)
-  //   }
-  // }, []);
-
   function changeCircle(currentPost) {
     let length = posts.length;
-    let currentPercent = (currentPost * 100) / length;
-    // console.log(Math.ceil(currentPercent));
+    let currentPercent = (currentPost * 100) / length;    
     handleclassCircle(Math.ceil(currentPercent));
   }
 
@@ -88,16 +64,7 @@ export default function Home({ posts }) {
       return;
     }
   }
-
-  // <Image
-  //       className={image__instruction[indexImage].className}
-  //       src={`/images/${image__instruction[indexImage].url}`}
-  //       width = {image__instruction[indexImage].width}
-  //       alt={"quick tip"}
-  //       height = {image__instruction[indexImage].height}
-
-  //  />
-
+  
   return (
     <div>
       <Head>
@@ -168,4 +135,15 @@ export default function Home({ posts }) {
       </main>
     </div>
   );
+}
+
+
+export async function getStaticProps() {
+  const res = await fetch("https://api.vuongnguyen.net/airtable/js.php");
+  const posts = await res.json();
+  return {
+    props: {
+      posts,
+    },
+  };
 }

@@ -6,23 +6,23 @@ function navigate() {
       <ul>
         <li>
           <Link href="/">
-            <a>Home</a>
+            Home
           </Link>
         </li>
              
         <li>
           <Link href="/credits">
-            <a>Credits</a>
+            Credits
           </Link>
         </li>
         <li>
           <Link href="/resource">
-            <a>API</a>
+            API
           </Link>
         </li>
         <li>
           <Link href="/about">
-            <a>About</a>
+            About
           </Link>
         </li>      
       </ul>
